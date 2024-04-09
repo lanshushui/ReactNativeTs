@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "bundle-android":"react-native bundle --platform android --dev false --entry-file index.js --bundle-output ./output/index.android.bundle --assets-dest ./output"
+    "bundle-android":"react-native bundle --platform android --dev false --entry-file index.js --bundle-output ./output/index.android.bundle  --config metro.diff.config.js  --assets-dest ./output",
+    "bundle-common":"react-native bundle --platform android  --dev false --entry-file common.js --bundle-output ./output/common.android.bundle --config metro.common.config.js "
   },
   "dependencies": {
     "react": "18.2.0",
